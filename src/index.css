@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply h-full w-full text-gray-500 bg-gray-20 scroll-smooth;
+}
+
+.gradient-red-yellow {
+  @apply bg-gradient-to-r from-red-500 to-yellow-500;
+}
+
+li.active {
+  @apply font-bold text-primary-500;
+}
+
+.evolve-text-content {
+  @apply lg:before:content-evolvetext before:absolute before:-z-[1] before:-top-20 before:-left-20;
+}
+
+.waves-content {
+  @apply before:content-abstractwaves before:absolute before:-z-[1] before:-top-20 before:-left-20;
+}
+
+.sparkles-content {
+  @apply before:content-sparkles before:absolute before:-z-[1] before:-bottom-20 before:right-10 lg:before:right-40;
+}
